@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "learning react with skillbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjonyGH/React.git"
+  },
+  "author": "evgeniy kalimullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DjonyGH/React/issues"
+  },
+  "homepage": "https://github.com/DjonyGH/React#readme"
+}
