@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "project_react",
   "version": "1.0.0",
   "description": "learning react with skillbox",
   "main": "index.js",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/DjonyGH/React/issues"
   },
-  "homepage": "https://github.com/DjonyGH/React#readme"
+  "homepage": "https://github.com/DjonyGH/React#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
