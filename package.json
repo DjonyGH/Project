@@ -4,9 +4,9 @@
   "description": "learning react with skillbox",
   "main": "index.js",
   "scripts": {
-    "test": "karma start",
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "webpack -p"
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,8 @@
     "tsc-init": "^2.1.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.3.0",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",

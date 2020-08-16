@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+export function Header() {
     return(
         <header>
             <h1>Our react project</h1>
@@ -8,4 +8,3 @@ function Header() {
     );
 }
 
-export default Header;
