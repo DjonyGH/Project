@@ -4,7 +4,7 @@ const NODE_ENV = process.env.NODE_ENV;
 
 module.exports = {
     resolve: {
-        extention: ['js', 'jsx', 'ts', 'tsx', 'json']
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
     },
     mode: NODE_ENV ? NODE_ENV : 'development',
     entry: path.resolve(__dirname, 'src/index.jsx'),
@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.[ts]sx?$/,
+            test: /\.[tj]sx?$/,
             use: ['ts-loader']
         }]
     }
