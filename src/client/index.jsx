@@ -4,7 +4,7 @@ import { Header } from '../shared/Header';
 
 
 window.addEventListener('load', () => {
-    ReactDom.render(
+    ReactDom.hydrate(
         <Header />,
         document.querySelector('.root')
     );
