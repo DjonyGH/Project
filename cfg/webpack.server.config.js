@@ -16,9 +16,26 @@ module.exports = {
         filename: 'server.js'
     },
     module: {
-        rules: [{
+        rules: [
+        {
             test: /\.[tj]sx?$/,
             use: ['ts-loader']
+        },
+        {
+            test: [/\.less$/, /\.css$/],
+            use: [
+                {
+                    loader: 'css-loader',
+                    options: {
+                        modules: {
+                            mode: 'local',
+                            localIdentName: '[name]__[local]--[hash:base64:5]',
+                            exportOnlyLocals: true
+                        },                    
+                    }
+                },
+                'less-loader'
+            ]
         }]
     },
     externals: [nodeExternals()],
